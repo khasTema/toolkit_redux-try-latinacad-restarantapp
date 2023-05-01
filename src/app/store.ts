@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { type } from "os";
 import reservationsReducer from "../features/reservationSlice"
+import customerReducer from "../features/customerSlice"
+
 
 export const store = configureStore({
     reducer: {
         reservation: reservationsReducer,
+        customer: customerReducer
     }
 })
 
